@@ -1,0 +1,239 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+
+:root {
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --contacts-color: #757575;
+  --text-color: #757575;
+  --background-color: #2f303a;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+/*------header------*/
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: currentColor;
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
+.header-link,
+.header-list-contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: currentColor;
+}
+
+.header-link:hover {
+  color: var(--accent-color);
+}
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-list-contacts:hover {
+  color: var(--accent-color);
+}
+.header-list-contacts:focus {
+  color: var(--accent-color);
+}
+
+.header-item-contacts {
+  color: var(--contacts-color);
+}
+
+/*------hero------*/
+.hero {
+  background-color: var(--background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  color: var(--white-color);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-btn {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: #2196f3;
+  cursor: pointer;
+}
+
+/*------feature------*/
+.feature-heading {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: currentColor;
+}
+
+.feature-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/*------activity & command------*/
+.activity-heading,
+.command-heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: currentColor;
+}
+
+/*------command------*/
+.command-item-heading {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: currentColor;
+}
+.command-item-paragraph {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/*------footer------*/
+.footer {
+  background-color: var(--background-color);
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.footer-web {
+  color: var(--accent-color);
+}
+
+.footer-item-address:hover,
+.footer-item-mail:hover,
+.footer-item-tel:hover {
+  color: var(--accent-color);
+}
+
+.footer-item-address:focus,
+.footer-item-mail:focus,
+.footer-item-tel:focus {
+  color: var(--accent-color);
+}
+
+.footer-item-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.footer-item-mail,
+.footer-item-tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*------css------*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.portfolio-btn:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.portfolio-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.portfolio-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.portfolio-item-heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+}
+
+.portfolio-item-paragraph {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
