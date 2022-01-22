@@ -122,6 +122,7 @@ img {
 .hero {
   background-color: var(--background-color);
   height: 600px;
+  flex-grow: 1;
 }
 
 .hero-title {
@@ -254,6 +255,7 @@ img {
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  flex-grow: 1;
 }
 
 .footer-logo {
