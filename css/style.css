@@ -222,6 +222,7 @@ img {
 
 /*------command------*/
 .command {
+  background: #f5f4fa;
   padding-top: 94px;
 }
 
@@ -229,6 +230,12 @@ img {
   margin-left: 30px;
 }
 
+.command-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 .comand-item-name {
   padding-top: 30px;
 }
@@ -338,7 +345,9 @@ img {
 }
 
 .header {
-  background: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 
 .portfolio-btn:hover {
@@ -381,8 +390,6 @@ img {
 }
 
 .portfolio-item {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
@@ -392,6 +399,8 @@ img {
 .portfolio-item-name {
   padding-top: 20px;
   padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+  width: 370px;
 }
 
 .portfolio-item-heading {
