@@ -50,8 +50,8 @@ img {
 /*------header------*/
 
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -60,6 +60,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: currentColor;
+  margin-right: 93px;
 }
 
 .logo-web {
@@ -76,18 +77,41 @@ img {
   color: currentColor;
 }
 
-.header-link:hover {
-  color: var(--accent-color);
+.header-container {
+  display: flex;
 }
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item + .header-item {
+  margin-left: 40px;
+}
+
+.header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
 }
 
-.header-list-contacts:hover {
-  color: var(--accent-color);
+.header-item-contacts + .header-item-contacts {
+  margin-left: 50px;
 }
+
+.header-list-contacts:hover,
 .header-list-contacts:focus {
   color: var(--accent-color);
+}
+
+.header-list-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 
 .header-item-contacts {
@@ -97,6 +121,7 @@ img {
 /*------hero------*/
 .hero {
   background-color: var(--background-color);
+  height: 600px;
 }
 
 .hero-title {
@@ -108,7 +133,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   padding-top: 200px;
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto 30px auto;
 }
 
 .hero-btn {
@@ -123,12 +149,27 @@ img {
   color: var(--white-color);
   background: #2196f3;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: 200px;
+  margin: 0 auto;
+  justify-content: center;
+  height: 50px;
 }
 
 /*------feature------*/
 .feature {
   padding-top: 94px;
 }
+
+.feature-list {
+  display: flex;
+}
+
+.feature-item + .feature-item {
+  margin-left: 30px;
+}
+
 .feature-heading {
   font-weight: bold;
   font-size: 14px;
@@ -159,6 +200,15 @@ img {
   margin-bottom: 50px;
 }
 
+.activity-list {
+  display: flex;
+  width: 370px;
+}
+
+.activity-item + .activity-item {
+  margin-left: 30px;
+}
+
 .activity {
   padding-top: 94px;
 }
@@ -168,8 +218,16 @@ img {
   padding-top: 188px;
 }
 
+.command-item + .command-item {
+  margin-left: 30px;
+}
+
 .comand-item-name {
   padding-top: 30px;
+}
+
+.command-list {
+  display: flex;
 }
 
 .command-item-heading {
@@ -263,6 +321,12 @@ img {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.header {
+  background: #ffffff;
 }
 
 .portfolio-btn:hover {
@@ -275,6 +339,14 @@ img {
   color: var(--white-color);
 }
 
+.portfolio-btn-list {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -283,11 +355,32 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin: auto 8px auto auto;
+}
+
+.portfolio {
+  display: flex;
+  margin-left: -30px;
+  margin-bottom: -30px;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .portfolio-item-name {
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .portfolio-item-heading {
@@ -296,6 +389,7 @@ img {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   padding-bottom: 4px;
+  margin-left: 24px;
 }
 
 .portfolio-item-paragraph {
@@ -304,4 +398,5 @@ img {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-left: 24px;
 }
