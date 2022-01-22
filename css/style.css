@@ -47,6 +47,11 @@ img {
   display: block;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*------header------*/
 
 .header {
@@ -123,6 +128,8 @@ img {
   background-color: var(--background-color);
   height: 600px;
   flex-grow: 1;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -133,7 +140,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
   width: 696px;
   margin: 0 auto 30px auto;
 }
@@ -159,9 +165,6 @@ img {
 }
 
 /*------feature------*/
-.feature {
-  padding-top: 94px;
-}
 
 .feature-list {
   display: flex;
@@ -198,6 +201,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: currentColor;
+}
+
+.activity {
+  padding-top: 0;
+}
+
+.activity-heading {
   margin-bottom: 50px;
 }
 
@@ -210,13 +220,9 @@ img {
   margin-left: 30px;
 }
 
-.activity {
-  padding-top: 94px;
-}
-
 /*------command------*/
 .command {
-  padding-top: 188px;
+  padding-top: 94px;
 }
 
 .command-item + .command-item {
@@ -229,6 +235,10 @@ img {
 
 .command-list {
   display: flex;
+}
+
+.command-heading {
+  margin-bottom: 50px;
 }
 
 .command-item-heading {
@@ -247,7 +257,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  padding-bottom: 124px;
+  margin-bottom: 30px;
 }
 
 /*------footer------*/
@@ -342,7 +352,6 @@ img {
 }
 
 .portfolio-btn-list {
-  padding-top: 94px;
   padding-bottom: 50px;
   display: flex;
   align-items: center;
@@ -382,7 +391,7 @@ img {
 
 .portfolio-item-name {
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .portfolio-item-heading {
