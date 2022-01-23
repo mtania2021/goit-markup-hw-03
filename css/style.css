@@ -9,6 +9,7 @@ body {
   --contacts-color: #757575;
   --text-color: #757575;
   --background-color: #2f303a;
+  --portfolio-link: #212121;
 }
 
 .container {
@@ -16,7 +17,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 ul {
@@ -45,6 +45,8 @@ button {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section {
@@ -215,7 +217,6 @@ img {
 
 .activity-list {
   display: flex;
-  width: 370px;
 }
 
 .activity-item + .activity-item {
@@ -240,6 +241,7 @@ img {
 }
 .comand-item-name {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .command-list {
@@ -266,7 +268,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
-  margin-bottom: 30px;
 }
 
 /*------footer------*/
@@ -287,7 +288,7 @@ img {
 }
 
 .container-logo {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-web {
@@ -325,9 +326,12 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-item {
+  margin-bottom: 9px;
+}
+
 .footer-item-mail {
   margin-top: 9px;
-  margin-bottom: 9px;
 }
 
 /*------css-portfolio-------*/
@@ -363,10 +367,14 @@ img {
 }
 
 .portfolio-btn-list {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.portfolio-btn-item {
+  margin-right: 8px;
 }
 
 .portfolio-btn {
@@ -381,7 +389,8 @@ img {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  margin: auto 8px auto auto;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .portfolio {
@@ -396,13 +405,12 @@ img {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-item-name {
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid #eeeeee;
-  width: 370px;
 }
 
 .portfolio-item-heading {
@@ -412,6 +420,7 @@ img {
   letter-spacing: 0.06em;
   padding-bottom: 4px;
   margin-left: 24px;
+  color: var(--portfolio-link);
 }
 
 .portfolio-item-paragraph {
@@ -421,4 +430,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-left: 24px;
+}
+
+.portfolio-item-link {
+  display: block;
 }
