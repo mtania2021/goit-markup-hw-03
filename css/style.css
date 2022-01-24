@@ -10,6 +10,7 @@ body {
   --text-color: #757575;
   --background-color: #2f303a;
   --portfolio-link: #212121;
+  --portfolio-btn: #f5f4fa;
 }
 
 .container {
@@ -330,8 +331,8 @@ img {
   margin-bottom: 9px;
 }
 
-.footer-item-mail {
-  margin-top: 9px;
+.footer-item:last-child {
+  margin-bottom: 0;
 }
 
 /*------css-portfolio-------*/
@@ -359,11 +360,27 @@ img {
 .portfolio-btn:hover {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .portfolio-btn-list {
@@ -389,7 +406,7 @@ img {
   padding-bottom: 6px;
   padding-left: 22px;
   padding-right: 22px;
-  background: #f5f4fa;
+  background-color: var(--portfolio-btn);
   border-radius: 4px;
 }
 
